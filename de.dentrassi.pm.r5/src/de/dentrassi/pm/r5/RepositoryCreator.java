@@ -146,7 +146,7 @@ public class RepositoryCreator
             caps.put ( "osgi.wiring.host", bi.getId () );
             caps.put ( "bundle-version", bi.getVersion () );
 
-            addIndexCapability ( writer, "osgi.wiring.host", caps );
+            addCapability ( writer, "osgi.wiring.host", caps );
         }
 
         for ( final BundleRequirement br : bi.getBundleRequirements () )
